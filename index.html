@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -15,90 +17,128 @@
         </div>
     </header>
 
-    <nav class="navbar">
-        <ul>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#legal">Legal Mentions</a></li>
-            <li><a href="#terms">Terms of Use</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section id="products" class="products">
+        <section class="video-section">
             <div class="container">
-                <h2>Our Popular Products - Puff 30k</h2>
-
-                <!-- Loop through all flavors for Puff 30k -->
-                <div class="product-card">
-                    <div class="product-img" style="background-image: url('https://i.imgur.com/Zgh5DWW.jpeg');"></div>
-                    <h3>Watermelon Ice / Blueberry Mint</h3>
-                    <p class="product-desc">A delightful mix of refreshing watermelon and minty blueberry flavors.</p>
-                    <a href="https://buy.stripe.com/7sI7uL6MU4Zdd68cMM" class="buy-button">Buy Now</a>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img" style="background-image: url('https://i.imgur.com/w3MQ09o.jpeg');"></div>
-                    <h3>Blueberry Raspberry / Mixed Mouldy Fruit</h3>
-                    <p class="product-desc">A unique combination of blueberry and exotic mixed fruit flavors.</p>
-                    <a href="https://buy.stripe.com/6oEaGXgnu77laY0dQR" class="buy-button">Buy Now</a>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img" style="background-image: url('https://i.imgur.com/8s3nEwE.jpeg');"></div>
-                    <h3>Strawberry Kiwi / Peach Ice</h3>
-                    <p class="product-desc">A fresh blend of strawberry and peach with a hint of kiwi.</p>
-                    <a href="https://buy.stripe.com/8wMcP5dbi1N13vyfZ0" class="buy-button">Buy Now</a>
-                </div>
-
-                <!-- Add more products similarly for each flavor (I am adding some more here) -->
-                <div class="product-card">
-                    <div class="product-img" style="background-image: url('https://i.imgur.com/s72A7fW.jpeg');"></div>
-                    <h3>Strawberry Kiwi / Sour Apple Raspberry</h3>
-                    <p class="product-desc">A perfect mix of sour apple and raspberry blended with strawberry and kiwi.</p>
-                    <a href="https://buy.stripe.com/bIY3ev5IQdvJ8PS5kn" class="buy-button">Buy Now</a>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-img" style="background-image: url('https://i.imgur.com/zb9WFPU.jpeg');"></div>
-                    <h3>Watermelon Ice / Strawberry And Mango</h3>
-                    <p class="product-desc">An exotic blend of watermelon, strawberry, and mango.</p>
-                    <a href="https://buy.stripe.com/dR64iz5IQ0IX7LOaEI" class="buy-button">Buy Now</a>
-                </div>
-
-                <!-- Product Video Section -->
-                <div class="product-card video">
-                    <h2>Product Video</h2>
-                    <video controls>
-                        <source src="https://i.imgur.com/CTKXAsc.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+                <h2>Product Video</h2>
+                <video class="product-video" controls>
+                    <source src="https://i.imgur.com/CTKXAsc.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="video-description">Bang 30k Puffs Double Taste Dispo Vape - designed for the ultimate vaping pleasure. With an incredible 30,000 puffs, this disposable vape pen ensures long-lasting use, making it a perfect choice for avid vapers.</p>
             </div>
         </section>
 
-        <!-- Legal Mentions Section -->
-        <section id="legal" class="legal">
+        <section class="products">
             <div class="container">
-                <h2>Legal Mentions</h2>
-                <p>Mario Shop is a registered company under the name "Mario Enterprises". We adhere to all European and international laws regarding e-commerce and customer data protection. Our registration number is XYZ123456, and our head office is located at 123 Main Street, Paris, France. For any legal questions, you can contact us at legal@marioshop.com.</p>
-            </div>
-        </section>
+                <h2>Our Popular Products</h2>
+                <div class="product-grid">
+                    <!-- Flavor 1 -->
+                    <div class="product-card">
+                        <img class="product-img" src="https://i.imgur.com/Zgh5DWW.jpeg" alt="Watermelon Ice / Blueberry Mint">
+                        <h3>Watermelon Ice / Blueberry Mint</h3>
+                        <p class="product-desc">Enjoy a refreshing blend of watermelon and blueberry mint.</p>
+                        <a href="https://buy.stripe.com/7sI7uL6MU4Zdd68cMM" class="buy-button">Buy Now</a>
+                    </div>
 
-        <!-- Terms of Use Section -->
-        <section id="terms" class="terms">
-            <div class="container">
-                <h2>Terms of Use</h2>
-                <p>By using Mario Shop's website, you agree to our terms of use. All products and services are provided "as is" and without warranties unless specifically mentioned. Users must be over 18 to make a purchase. Mario Shop is not liable for any damages resulting from the improper use of products. Prices and availability are subject to change without prior notice. For full terms, visit our detailed terms and conditions page.</p>
+                    <!-- Flavor 2 -->
+                    <div class="product-card">
+                        <img class="product-img" src="https://i.imgur.com/w3MQ09o.jpeg" alt="Blueberry Raspberry / Mixed Mouldy Fruit">
+                        <h3>Blueberry Raspberry / Mixed Mouldy Fruit</h3>
+                        <p class="product-desc">A unique mix of blueberry, raspberry, and exotic fruit flavors.</p>
+                        <a href="https://buy.stripe.com/6oEaGXgnu77laY0dQR" class="buy-button">Buy Now</a>
+                    </div>
+
+                    <!-- Flavor 3 -->
+                    <div class="product-card">
+                        <img class="product-img" src="https://i.imgur.com/8s3nEwE.jpeg" alt="Strawberry Kiwi / Peach Ice">
+                        <h3>Strawberry Kiwi / Peach Ice</h3>
+                        <p class="product-desc">A delightful combination of strawberry, kiwi, and peach.</p>
+                        <a href="https://buy.stripe.com/8wMcP5dbi1N13vyfZ0" class="buy-button">Buy Now</a>
+                    </div>
+
+                    <!-- Flavor 4 -->
+                    <div class="product-card">
+                        <img class="product-img" src="https://i.imgur.com/s72A7fW.jpeg" alt="Strawberry Kiwi / Sour Apple Raspberry">
+                        <h3>Strawberry Kiwi / Sour Apple Raspberry</h3>
+                        <p class="product-desc">A perfect blend of sweet strawberry and sour apple.</p>
+                        <a href="https://buy.stripe.com/bIY3ev5IQdvJ8PS5kn" class="buy-button">Buy Now</a>
+                    </div>
+
+                    <!-- Flavor 5 -->
+                    <div class="product-card">
+                        <img class="product-img" src="https://i.imgur.com/zb9WFPU.jpeg" alt="Watermelon Ice / Strawberry And Mango">
+                        <h3>Watermelon Ice / Strawberry And Mango</h3>
+                        <p class="product-desc">Cool watermelon combined with sweet strawberry and mango.</p>
+                        <a href="https://buy.stripe.com/dR64iz5IQ0IX7LOaEI" class="buy-button">Buy Now</a>
+                    </div>
+
+                    <!-- Flavor 6 -->
+                    <div class="product-card">
+                        <img class="product-img" src="https://i.imgur.com/gTedAEp.jpeg" alt="Strawberry Watermelon / Kiwi Passion Fruit Guava">
+                        <h3>Strawberry Watermelon / Kiwi Passion Fruit Guava</h3>
+                        <p class="product-desc">A tropical mix with strawberry, kiwi, passion fruit, and guava.</p>
+                        <a href="https://buy.stripe.com/9AQ9CT2wEfDR8PSbIN" class="buy-button">Buy Now</a>
+                    </div>
+
+                    <!-- Flavor 7 -->
+                    <div class="product-card">
+                        <img class="product-img" src="https://i.imgur.com/a7rRzC9.jpeg" alt="Strawberry And Watermelon / Grape Ice">
+                        <h3>Strawberry And Watermelon / Grape Ice</h3>
+                        <p class="product-desc">Refreshing mix of strawberry, watermelon, and icy grape.</p>
+                        <a href="https://buy.stripe.com/14k6qHc7e2R52ruaEK" class="buy-button">Buy Now</a>
+                    </div>
+
+                    <!-- Flavor 8 -->
+                    <div class="product-card">
+                        <img class="product-img" src="https://i.imgur.com/nvjOiem.jpeg" alt="Blueberry Ice / Black Dragon Ice">
+                        <h3>Blueberry Ice / Black Dragon Ice</h3>
+                        <p class="product-desc">Icy blueberry combined with mysterious black dragon fruit.</p>
+                        <a href="https://buy.stripe.com/cN29CTefm9ft3vy9AH" class="buy-button">Buy Now</a>
+                    </div>
+
+                    <!-- Flavor 9 -->
+                    <div class="product-card">
+                        <img class="product-img" src="https://i.imgur.com/3Gg5YtZ.jpeg" alt="Blueberry Ice / Strawberry and Banana">
+                        <h3>Blueberry Ice / Strawberry and Banana</h3>
+                        <p class="product-desc">A fruity blend of blueberry, strawberry, and banana.</p>
+                        <a href="https://buy.stripe.com/aEU2ar4EMcrF4zC8wE" class="buy-button">Buy Now</a>
+                    </div>
+
+                    <!-- Flavor 10 -->
+                    <div class="product-card">
+                        <img class="product-img" src="https://i.imgur.com/bPh3r09.jpeg" alt="Redbull / Blueberry Watermelon">
+                        <h3>Redbull / Blueberry Watermelon</h3>
+                        <p class="product-desc">A vibrant mix of energy drink flavor with blueberry and watermelon.</p>
+                        <a href="https://buy.stripe.com/cN29CTc7ebnBeac7sB" class="buy-button">Buy Now</a>
+                    </div>
+
+                    <!-- Flavor 11 -->
+                    <div class="product-card">
+                        <img class="product-img" src="https://i.imgur.com/8rWt8tX.jpeg" alt="Redbull / Watermelon Bubble Candy">
+                        <h3>Redbull / Watermelon Bubble Candy</h3>
+                        <p class="product-desc">Sweet watermelon bubble candy mixed with Redbull.</p>
+                        <a href="https://buy.stripe.com/7sIaGX0owajxfeg8wG" class="buy-button">Buy Now</a>
+                    </div>
+
+                    <!-- Flavor 12 -->
+                    <div class="product-card">
+                        <img class="product-img" src="https://i.imgur.com/BmRhpPX.jpeg" alt="Blueberry Raspberry / Peach Mango Watermelon">
+                        <h3>Blueberry Raspberry / Peach Mango Watermelon</h3>
+                        <p class="product-desc">An exotic blend of blueberry, raspberry, peach, and mango.</p>
+                        <a href="https://buy.stripe.com/7sI5mD7QYajx4zC00b" class="buy-button">Buy Now</a>
+                    </div>
+
+                </div>
             </div>
         </section>
     </main>
 
-    <footer id="contact">
+    <footer>
         <div class="container">
             <p>&copy; 2024 Mario Shop. All Rights Reserved.</p>
-            <p>Contact us: <a href="mailto:contact@marioshop.com">contact@marioshop.com</a></p>
         </div>
     </footer>
 </body>
+
 </html>
