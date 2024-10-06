@@ -1,0 +1,107 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Style */
+body {
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* Header Style */
+header {
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    padding: 60px 0;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
+    animation: slide-down 1s ease-in-out forwards;
+}
+
+@keyframes slide-down {
+    0% { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+}
+
+/* Header Content */
+.header .title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* Main Product Section */
+.products {
+    padding: 40px 0;
+    background: #f5f5f5;
+    color: #333;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+    transform: rotateX(15deg);
+    transition: 0.5s;
+}
+
+.products:hover {
+    transform: rotateX(0deg) scale(1.05);
+}
+
+.product-card {
+    background: #fff;
+    color: #333;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 300px;
+    padding: 20px;
+    transition: 0.5s;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) rotateY(0);
+}
+
+.product-card:hover {
+    transform: perspective(1000px) rotateY(10deg);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+    height: 200px;
+    background: linear-gradient(120deg, #ffecd2, #fcb69f);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.buy-button {
+    display: inline-block;
+    background: #ff5f6d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.buy-button:hover {
+    background: #ff3a3a;
+}
+
+/* Footer Style */
+footer {
+    padding: 20px 0;
+    background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+    box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px 20px 0 0;
+}
