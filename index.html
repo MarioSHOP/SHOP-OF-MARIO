@@ -1,40 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Shop - Colorful 3D Design</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Mario Shop - Votre Boutique en Ligne</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1 class="title">Welcome to Mario Shop</h1>
-            <p class="tagline">Discover our colorful collection of products with the best prices!</p>
-        </div>
+    <header class="header">
+        <h1>Mario Shop</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">À Propos</a></li>
+            </ul>
+        </nav>
     </header>
+    
+    <section id="home" class="banner">
+        <h2>Bienvenue chez Mario Shop</h2>
+        <p>Trouvez les meilleurs produits directement importés des USA !</p>
+        <button class="btn-shop">Commencez à Acheter</button>
+    </section>
 
-    <main>
-        <section class="products">
-            <div class="container">
-                <h2>Our Popular Products</h2>
-                <div class="product-card">
-                    <div class="product-img"></div>
-                    <h3>Product Name</h3>
-                    <p class="product-desc">This is a colorful description of a product that is very attractive.</p>
-                    <a href="#" class="buy-button">Buy Now</a>
-                </div>
-
-                <!-- Duplicate product-card as needed for more products -->
+    <section id="products" class="products">
+        <h2>Nos Produits</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/200" alt="Produit 1">
+                <h3>Produit 1</h3>
+                <p>Prix: 20€</p>
+                <button class="btn-buy">Acheter Maintenant</button>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Mario Shop. All Rights Reserved.</p>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/200" alt="Produit 2">
+                <h3>Produit 2</h3>
+                <p>Prix: 30€</p>
+                <button class="btn-buy">Acheter Maintenant</button>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/200" alt="Produit 3">
+                <h3>Produit 3</h3>
+                <p>Prix: 15€</p>
+                <button class="btn-buy">Acheter Maintenant</button>
+            </div>
         </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contactez-nous</h2>
+        <p>Email: contact@marioshop.com</p>
+        <p>Téléphone: +33 1 23 45 67 89</p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Mario Shop. Tous droits réservés.</p>
     </footer>
 </body>
 </html>
