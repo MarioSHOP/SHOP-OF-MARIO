@@ -1,100 +1,40 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mario Shop</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #343a40;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #343a40;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 15px;
-        }
-        nav a:hover {
-            background-color: #007bff;
-        }
-        main {
-            padding: 20px;
-        }
-        .product {
-            border: 1px solid #ccc;
-            padding: 15px;
-            margin: 15px;
-            text-align: center;
-            background-color: #fff;
-            border-radius: 5px;
-        }
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Mario Shop - Colorful 3D Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header>
-        <h1>Mario Shop</h1>
-        <p>Bienvenue sur Mario Shop - Votre destination pour des produits Walmart exclusifs</p>
+        <div class="container">
+            <h1 class="title">Welcome to Mario Shop</h1>
+            <p class="tagline">Discover our colorful collection of products with the best prices!</p>
+        </div>
     </header>
 
-    <nav>
-        <a href="#produits">Produits</a>
-        <a href="#a-propos">À propos</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
     <main>
-        <section id="produits">
-            <h2>Nos Produits</h2>
-            <div class="product">
-                <h3>Pop-Tarts</h3>
-                <p>Un classique américain, idéal pour le petit déjeuner !</p>
-                <p>Prix : 4,99€</p>
-            </div>
-            <div class="product">
-                <h3>Nerds Candy</h3>
-                <p>Des bonbons sucrés et croquants, pour une explosion de saveurs !</p>
-                <p>Prix : 2,99€</p>
-            </div>
-        </section>
+        <section class="products">
+            <div class="container">
+                <h2>Our Popular Products</h2>
+                <div class="product-card">
+                    <div class="product-img"></div>
+                    <h3>Product Name</h3>
+                    <p class="product-desc">This is a colorful description of a product that is very attractive.</p>
+                    <a href="#" class="buy-button">Buy Now</a>
+                </div>
 
-        <section id="a-propos">
-            <h2>À Propos de Mario Shop</h2>
-            <p>Mario Shop est une boutique en ligne spécialisée dans l'exportation de produits populaires américains en France et en Europe. Nos produits proviennent directement des supermarchés Walmart, garantissant authenticité et qualité.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contactez-nous</h2>
-            <p>Pour toute question ou commande spéciale, veuillez nous contacter à : <a href="mailto:mario@shop.com">mario@shop.com</a></p>
+                <!-- Duplicate product-card as needed for more products -->
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Mario Shop. Tous droits réservés.</p>
+        <div class="container">
+            <p>&copy; 2024 Mario Shop. All Rights Reserved.</p>
+        </div>
     </footer>
-
 </body>
 </html>
